@@ -10,7 +10,7 @@ Just load the module:
 
 	var minimumTLSVersion = require('../index.js');
 
-Then specify the minimum TLS version:
+Then specify the minimum TLS version. For example:
 
 	minimumTLSVersion('tlsv11')
 
@@ -20,7 +20,7 @@ Whereas:
 
 	minimumTLSVersion('sslv3')
 
-	...would disable all TLS/SSL versions older than sslv3 (eg, sslv2 is disabled):
+...would disable all TLS/SSL versions older than sslv3 (eg, sslv2 is disabled):
 
 You'd normally use these values with `https.createServer`s `secureOptions` options, eg, in plain node:
 
