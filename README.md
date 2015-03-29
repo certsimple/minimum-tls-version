@@ -14,13 +14,15 @@ Then specify the minimum TLS version:
 
 	minimumTLSVersion('tlsv11')
 
-Disabled all TLS/SSL versions older than tlsv11 (eg, tlsv1, sslv3 and sslv2 are now disabled)
+...would disable all TLS/SSL versions older than tlsv11 (eg, tlsv1, sslv3 and sslv2 are now disabled):
+
+Whereas:
 
 	minimumTLSVersion('sslv3')
 
-Disabled all TLS/SSL versions older than sslv3 (eg, sslv2 is disabled)
+	...would disable all TLS/SSL versions older than sslv3 (eg, sslv2 is disabled):
 
-You'd normally use these values, eg, in plain node:
+You'd normally use these values with `https.createServer`s `secureOptions` options, eg, in plain node:
 
 	https.createServer({
 		key: privateKey,
