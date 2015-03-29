@@ -22,7 +22,7 @@ Whereas:
 
 ...would disable all TLS/SSL versions older than sslv3 (eg, sslv2 is disabled):
 
-You'd normally use these values with `https.createServer`s `secureOptions` options, eg, in plain node:
+You'd normally use these values with `https.createServer`s `secureOptions` option, eg, in plain node:
 
 	https.createServer({
 		key: privateKey,
