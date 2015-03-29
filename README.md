@@ -8,7 +8,7 @@ All TLS/SSL versions older than the minimum will be disabled. The full list of T
 
 Just load the module:
 
-	var minimumTLSVersion = require('../index.js');
+	var minimumTLSVersion = require('minimum-tls-version');
 
 Then specify the minimum TLS version. For example:
 
