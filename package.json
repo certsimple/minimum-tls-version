@@ -1,6 +1,6 @@
 {
   "name": "minimum-tls-version",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Allows you to easily specify a mimimum TLS/SSL version for node.js and io.js. All TLS/SSL versions older than the minimum will be disabled.",
   "main": "index.js",
   "scripts": {
