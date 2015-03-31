@@ -24,7 +24,7 @@ suite('TLS version values', function(){
 	})
 
 	test('Minimum tlsv12', function(done){
-		assert.equal(mimumumTLSVersion('tlsv11'), constants.SSL_OP_NO_TLSv11|constants.SSL_OP_NO_TLSv1|constants.SSL_OP_NO_SSLv3|constants.SSL_OP_NO_SSLv2)
+		assert.equal(mimumumTLSVersion('tlsv12'), constants.SSL_OP_NO_TLSv1_1|constants.SSL_OP_NO_TLSv1|constants.SSL_OP_NO_SSLv3|constants.SSL_OP_NO_SSLv2)
 		done()
 	})
 })
